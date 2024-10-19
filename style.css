@@ -1,3 +1,8 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: bisque;
 }
@@ -62,7 +67,7 @@ header nav li a:hover{
     border-radius: 5px;
 }
 .foot_direitos{
-    text-align: right;
+    text-align: left;
 
     }
     .experiencia{
@@ -116,4 +121,58 @@ header nav li a:hover{
         padding: 20px;
         text-align: center;
         margin-top: 50px;
+    }
+    .modal-content{
+        background-color:bisque;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 400px;
+    }
+    .modal form label{
+        margin: 10px;
+        font-size: 16px;
+
+    }
+    .modal form input{
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .modal form .btn {
+        background-color: #ff6347;
+        color: white;
+        filter: blur(2);
+        border-radius: 5px ;
+        padding: .5rem;
+        cursor: pointer;
+        margin-top: 20px;
+    
+    }
+    .modal form .btn:hover{
+        transform: translateY(-5px);
+        background-color: blue;
+
+    }
+    .modal form{
+        display: flex;
+        flex-direction: column;
+    }
+    .modal{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, 0.7);
+        position: fixed;
+        z-index: 1;
+        top: 0;
+    }
+    .close-btn{
+        color: #333;
+        float: right;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .close-btn:hover{
+        color: red;
     }
